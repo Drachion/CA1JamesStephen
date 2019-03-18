@@ -1,0 +1,82 @@
+@(employees: List[models.users.Employee],departments: List[models.department.Department], user: models.users.User, env: play.api.Environment)
+@main("On Staff", user){
+    <h3>Employees</h3>
+
+
+    @* Display successful new product message from flash, if it is set *@
+	@if(flash.containsKey("success")) {
+		<div class="alert alert-success">
+			@flash.get("success")
+		</div>
+}
+
+
+
+
+    <div class="col-sm-6">
+		<h4>Departments</h4>
+	        <div class="list-group">
+                <a href = "@routes.HomeController.employeesOnRecord(0)" class="list-group-item">All Departments</a>
+		        @for(c<-departments) {
+			        <a href = "@routes.HomeController.employeesOnRecord(c.getId())" class="list-group-item catheight">@c.getName
+                        <span class="badge">@c.getEmployees.size</span> 
+                    </a>
+			    }
+            </div>
+    </div>
+
+    <div class="col-sm-9">
+        <table class="table table-bordered table-hover table-condensed">
+            <thead>
+        <!-- The header row-->
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Department ID</th>
+            <th>Department</th>
+            <!-- <th>Start Date</th> -->
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Product row(s) -->
+       
+            @* Loop for creating table rows from Employee data *@
+            @for(i<-employees) {
+               <tr>
+                   @if(env.resource("public/images/productImages/" + i.getId + "thumb.jpg").isDefined){
+                       <td><img src="/assets/images/productImages/@(i.getId + "thumb.jpg")"/></td>
+                   } else{
+                       <td><img src="/assets/images/productImages/noImage.jpg"/></td>
+                   }
+                  <td>@i.getName</td>
+                  <td>@i.getDepartment.getId</td>
+                  <td>@i.getDepartment.getName</td>
+                
+                  <!-- Update button -->
+                @if((user != null) && ("admin".equals(user.getRole()))){
+					<td>
+						<a href="@routes.HomeController.updateEmployee(i.getEmail)" class="button-xs btn-danger">
+							<span class="glyphicon glyphicon-pencil"></span>
+						</a>
+                </td>
+                  <!-- Delete button -->
+				<td>
+					<a href="@routes.HomeController.deleteEmployee(i.getEmail)" class="button-xs btn-danger" onclick="return confirmDel();">
+						<span class="glyphicon glyphicon-trash"></span>
+					</a>
+                </td>
+                }
+               </tr>
+            }
+        
+        </tbody>
+    </table>
+    @if((user != null) && ("admin".equals(user.getRole()))){
+    <p>
+        <a href="@routes.HomeController.addEmployee()">
+            <button class="btn btn-primary">Add an Employee</button>
+        </a>
+    </p>
+    }
+</div>
+}

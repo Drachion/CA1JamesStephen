@@ -1,0 +1,25 @@
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/Software-CA1/SDevCA1JamesAndStephen/SDevCA1JamesAndStephen/Employee System - Latest Copy/app/models/users/Employee.java:1:27: illegal start of type declaration[0m
+[0m[[0m[31merror[0m] [0m[0mpackage models.users;42122-197[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/Software-CA1/SDevCA1JamesAndStephen/SDevCA1JamesAndStephen/Employee System - Latest Copy/app/models/users/Employee.java:4:8: illegal start of type declaration[0m
+[0m[[0m[31merror[0m] [0m[0mimport models.project.Project;[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/Software-CA1/SDevCA1JamesAndStephen/SDevCA1JamesAndStephen/Employee System - Latest Copy/app/models/users/Employee.java:5:8: illegal start of type declaration[0m
+[0m[[0m[31merror[0m] [0m[0mimport models.users.User;[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/Software-CA1/SDevCA1JamesAndStephen/SDevCA1JamesAndStephen/Employee System - Latest Copy/app/models/users/Employee.java:7:8: illegal start of type declaration[0m
+[0m[[0m[31merror[0m] [0m[0mimport java.util.*;[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/Software-CA1/SDevCA1JamesAndStephen/SDevCA1JamesAndStephen/Employee System - Latest Copy/app/models/users/Employee.java:8:8: illegal start of type declaration[0m
+[0m[[0m[31merror[0m] [0m[0mimport javax.persistence.*;[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/Software-CA1/SDevCA1JamesAndStephen/SDevCA1JamesAndStephen/Employee System - Latest Copy/app/models/users/Employee.java:10:8: illegal start of type declaration[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.ebean.*;[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/Software-CA1/SDevCA1JamesAndStephen/SDevCA1JamesAndStephen/Employee System - Latest Copy/app/models/users/Employee.java:11:8: illegal start of type declaration[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.data.format.*;[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/Software-CA1/SDevCA1JamesAndStephen/SDevCA1JamesAndStephen/Employee System - Latest Copy/app/models/users/Employee.java:12:8: illegal start of type declaration[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.data.validation.*;[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m8 errors found[0m
