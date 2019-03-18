@@ -1,0 +1,15 @@
+The main issues with this upload are as follows:
+
+The Departments:
+They do not seem to be displaying correctly. If "Computing" is chosen, for example, the arraylist has a sort of modular effect, in that it had
+a size of 6, but newer employees would be given an ID of 7, so it would roll over to 1 again. Bizarre.
+
+We sort of got this run by disabling the auto creation of SQL and adding a department_id to the user class.
+
+The Projects:
+We get the page rendering correctly, but the mappings seem to be off. Stephen could say more.
+
+Most other things seem to be working well enough.
+
+
+James
